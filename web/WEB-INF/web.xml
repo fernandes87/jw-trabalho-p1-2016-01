@@ -1,13 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
-    
     <servlet>
         <servlet-name>ServletLogin</servlet-name>
         <servlet-class>rentcar.BUSINESS.ServletLogin</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServletCarro</servlet-name>
+        <servlet-class>rentcar.BUSINESS.ServletCarro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletCliente</servlet-name>
+        <servlet-class>rentcar.BUSINESS.ServletCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletAluguel</servlet-name>
+        <servlet-class>rentcar.BUSINESS.ServletAluguel</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletRelatorio</servlet-name>
+        <servlet-class>rentcar.BUSINESS.ServletRelatorio</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServletLogin</servlet-name>
         <url-pattern>/ServletLogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCarro</servlet-name>
+        <url-pattern>/ServletCarro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletCliente</servlet-name>
+        <url-pattern>/ServletCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletAluguel</servlet-name>
+        <url-pattern>/ServletAluguel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletRelatorio</servlet-name>
+        <url-pattern>/ServletRelatorio</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
