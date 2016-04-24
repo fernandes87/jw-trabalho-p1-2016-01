@@ -21,17 +21,11 @@ import rentcar.UTIL.JavaWebException;
  *
  * @author LEONE
  */
-public class Login extends HttpServlet {
+public class ServletLogin extends HttpServlet {
 
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    
+    //private static final long serialVersionUID = 1;
+    
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -51,7 +45,7 @@ public class Login extends HttpServlet {
                 out.println("</body>");
                 out.println("</html>");
             } else {
-                 out.println("<!DOCTYPE html>");
+                out.println("<!DOCTYPE html>");
                 out.println("<html>");
                 out.println("<head>");
                 out.println("<title>Servlet ServletLogin</title>");
@@ -62,7 +56,7 @@ public class Login extends HttpServlet {
                 out.println("</html>");
             }
         } catch (JavaWebException ex) {
-            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServletLogin.class.getName()).log(Level.SEVERE, null, ex);
         } finally {
             out.close();
         }

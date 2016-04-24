@@ -13,13 +13,16 @@ import rentcar.UTIL.JavaWebException;
 
 public class UsuarioDAOImpl{
 
-    private final String INSERT_QUERY = "insert into login_tb (cod_login,usuario,senha) values (?,?,?)";
-    private final String SELECT_ALL_QUERY = "select * from login_tb";
+    //private final String INSERT_QUERY = "insert into login_tb (cod_login,usuario,senha) values (?,?,?)";
+    //private final String SELECT_ALL_QUERY = "select * from login_tb";
     private final String SELECT_USUARIO = "select * from login_tb where usuario = ? and senha = ?";
+    
+    /*
     public final void save(Usuario u) throws JavaWebException {
         Connection conn = null;
         ResultSet rs = null;
         PreparedStatement prepStmt = null;
+        
         try {
             conn = GerenciadorConexoes.getConexao();
             prepStmt = conn.prepareStatement(INSERT_QUERY);
@@ -35,7 +38,7 @@ public class UsuarioDAOImpl{
             GerenciadorConexoes.closeAll(conn, prepStmt, rs);
         }
     }
-    
+    */
     public Usuario getUsuario(String usuario, String senha) throws JavaWebException {
         Connection conn = null;
         PreparedStatement prepStmt = null;

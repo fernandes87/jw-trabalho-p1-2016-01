@@ -20,7 +20,7 @@ public class GerenciadorConexoes {
     private static final String DRIVER_MYSQL = "com.mysql.jdbc.Driver";
     private static final String DRIVER_DERBY = "org.apache.derby.jdbc.ClientDriver";
     
-    private static final String BANCO_DE_DADOS = "sample";
+    private static final String BANCO_DE_DADOS = "rentcar_db";
     private static final String IP = "localhost"; //"192.168.0.1";
     private static final String USUARIO = "FERNANDES87";
     private static final String SENHA = "123456";
