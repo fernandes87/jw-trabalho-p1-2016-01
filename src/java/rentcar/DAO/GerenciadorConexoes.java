@@ -22,7 +22,7 @@ public class GerenciadorConexoes {
     
     private static final String BANCO_DE_DADOS = "rentcar_db";
     private static final String IP = "localhost"; //"192.168.0.1";
-    private static final String USUARIO = "FERNANDES87";
+    private static final String USUARIO = "fernandes87";
     private static final String SENHA = "123456";
 
     private static final String STR_MYSQL = "jdbc:mysql://" + IP + ":3306/" + BANCO_DE_DADOS;
